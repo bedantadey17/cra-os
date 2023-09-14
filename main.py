@@ -13,7 +13,7 @@ print("""
       Enjoy Cra-OS, I hope you will like it! You can even use it as a daily driver!
       
       """)
-print("Version: 0.0.1")
+print("Version: 0.0.2")
 print("(c) Bedanta Dey 1930-2023 | All rights reserved.")
 print()
 print()

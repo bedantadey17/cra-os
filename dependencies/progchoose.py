@@ -1,6 +1,7 @@
 import dependencies.clearmod as clear
 import dependencies.calc as calc
 import dependencies.wallp as wallp
+import dependencies.terminal as terminal
 import time,os
 
 def get_username():
@@ -33,8 +34,9 @@ def progchooser():
     print()
     print("""
     0 - Change Wallpaper
-    1 - Simple Calculator
-    2 - """)
+    1 - Calculator
+    2 - Terminal
+    """)
     print()
 
     choice = input("Enter your choice > ")
@@ -48,7 +50,19 @@ def progchooser():
         
     elif choice == "1":
         clear.clear()
-        print("Now loading [Simple Calculator]...")
+        print("Now loading [Calculator]...")
         time.sleep(5)
         clear.clear()
         calc.calc()
+
+    elif choice == "2":
+        clear.clear()
+        print("Now loading [Terminal]...")
+        time.sleep(5)
+        clear.clear()
+        terminal.terminal_prompt()
+    else:
+        print("Goodbye!")
+        time.sleep(2)
+        clear.clear()
+        exit()
